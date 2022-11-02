@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Applicación de Restaurante</string>
+    <string name="Imagenes">Imagen</string>
+    <string name="Botones">Botones</string>
+    <string name="Cuadros_de_texto">Cuadros de Texto</string>
+    <string name="CodigoAdmin">Código Administrador</string>
+</resources>

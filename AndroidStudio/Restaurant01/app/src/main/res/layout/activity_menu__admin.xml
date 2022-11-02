@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF8080"
+    tools:context=".Menu_Admin">
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="415dp"
+        android:layout_height="106dp"
+        android:contentDescription="@string/Imagenes"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/cuadro" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="415dp"
+        android:layout_height="106dp"
+        android:contentDescription="@string/Imagenes"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/cuadro" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginRight="79dp"
+        android:contentDescription="@string/Imagenes"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="242dp"
+        android:layout_height="124dp"
+        android:alpha="0"
+        android:onClick="Admin_Admins"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView22" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="111dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/Imagenes"
+        android:rotation="90"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView18"
+        app:srcCompat="@mipmap/opchon" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="240dp"
+        android:layout_height="112dp"
+        android:alpha="0"
+        android:contentDescription="@string/Botones"
+        android:onClick="Admin_Cuentas"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="@+id/imageView20"
+        app:layout_constraintTop_toTopOf="@+id/imageView20" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="129dp"
+        android:layout_height="233dp"
+        android:layout_marginTop="280dp"
+        android:contentDescription="@string/Imagenes"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19"
+        app:srcCompat="@mipmap/opchon" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="229dp"
+        android:layout_height="117dp"
+        android:alpha="0"
+        android:onClick="Admin_Menu"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+        app:layout_constraintEnd_toEndOf="@+id/imageView21"
+        app:layout_constraintStart_toStartOf="@+id/imageView21"
+        app:layout_constraintTop_toTopOf="@+id/imageView21" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="121dp"
+        android:layout_height="257dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/Imagenes"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:srcCompat="@mipmap/opchon" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Menú"
+        android:textColor="#7A5A4E"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+        app:layout_constraintEnd_toEndOf="@+id/imageView21"
+        app:layout_constraintStart_toStartOf="@+id/imageView21"
+        app:layout_constraintTop_toTopOf="@+id/imageView21"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Administradores"
+        android:textColor="#7A5A4E"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+        app:layout_constraintEnd_toEndOf="@+id/imageView22"
+        app:layout_constraintStart_toStartOf="@+id/imageView22"
+        app:layout_constraintTop_toTopOf="@+id/imageView22" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Pedidos"
+        android:textColor="#7A5A4E"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="@+id/imageView20"
+        app:layout_constraintTop_toTopOf="@+id/imageView20" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="258dp"
+        android:layout_height="52dp"
+        android:onClick="Admin_ReporteMensual"
+        android:text="Generar Reporte Mensual"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView40"
+        app:layout_constraintEnd_toEndOf="@+id/imageView40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView40" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9D9D"
+    tools:context=".Menu_Cliente">
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="412dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/Imagenes"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/cuadro" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="414dp"
+        android:layout_height="110dp"
+        android:contentDescription="@string/Imagenes"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/cuadro" />
+
+    <TextView
+        android:id="@+id/MenuTituloCliente"
+        android:layout_width="251dp"
+        android:layout_height="79dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Mesa ##"
+        android:textColor="#B5C664"
+        android:textSize="50dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RV_Cliente_Menu"
+        android:layout_width="382dp"
+        android:layout_height="466dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="66dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView15"
+        app:srcCompat="@mipmap/listrest" />
+
+    <TextView
+        android:id="@+id/Total_Client"
+        android:layout_width="146dp"
+        android:layout_height="43dp"
+        android:gravity="right|center_vertical"
+        android:text="$###.###"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView15"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="88dp"
+        android:layout_height="81dp"
+        android:alpha="0"
+        android:onClick="Cuenta_PopUp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView15"
+        app:layout_constraintStart_toStartOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="82dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/lock2png" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="78dp"
+        android:layout_height="66dp"
+        android:alpha="0"
+        android:onClick="Bloc"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

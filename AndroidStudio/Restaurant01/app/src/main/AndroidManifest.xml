@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.restaurant01">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.AC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Aplicación de Restaurante"
+        android:roundIcon="@mipmap/restaurantelogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Bloqueo"></activity>
+        <activity
+            android:name=".PopUp_TarjetaOEfectivo"
+            android:theme="@style/AppTheme.CustomThemePopUp" />
+        <activity
+            android:name=".PopUp_quitarPedido"
+            android:theme="@style/AppTheme.CustomThemePopUp" />
+        <activity
+            android:name=".Menu_Cuentas_Clientes"
+            android:theme="@style/AppTheme.CustomThemePopUp" />
+        <activity android:name=".Menu_Cuentas_Admin" />
+        <activity
+            android:name=".PopUp_AgregarPlatCuenta"
+            android:theme="@style/AppTheme.CustomThemePopUp" />
+        <activity android:name=".Menu_Cliente" />
+        <activity android:name=".Hacer_Pedido" />
+        <activity
+            android:name=".Agregar_Platillo_Admn"
+            android:theme="@style/AppTheme.CustomThemePopUp" />
+        <activity
+            android:name=".Editar_Platillo_Menu"
+            android:theme="@style/AppTheme.CustomThemePopUp" />
+        <activity
+            android:name=".Eliminar_Platillo_Menu"
+            android:theme="@style/AppTheme.CustomThemePopUp" />
+        <activity android:name=".Menu_Menu" />
+        <activity android:name=".Eliminar_Admin" />
+        <activity android:name=".Administradores" />
+        <activity android:name=".Registrar_Admin" />
+        <activity android:name=".Client_Menu" />
+        <activity android:name=".Menu_Admin" />
+        <activity android:name=".Select_Mesa" />
+        <activity android:name=".Admin_Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

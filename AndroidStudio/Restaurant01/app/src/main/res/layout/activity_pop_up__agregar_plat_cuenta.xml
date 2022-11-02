@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C36060"
+    tools:context=".PopUp_AgregarPlatCuenta">
+
+    <TextView
+        android:id="@+id/txt_plant3"
+        android:layout_width="427dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="10dp"
+        android:background="#5A2B2B"
+        android:gravity="center"
+        android:text="Agregar Platillo a la Cuenta"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Titulo_Plat_Add_clnt"
+        android:layout_width="179dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center_vertical"
+        android:text="Titulo_Platillo"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_plant3" />
+
+    <ImageView
+        android:id="@+id/IMG_Plat_Add_clnt"
+        android:layout_width="96dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/Titulo_Plat_Add_clnt"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_plant3"
+        app:srcCompat="@mipmap/restaurantelogoplatilloooo" />
+
+    <TextView
+        android:id="@+id/Descripcion_Plat_Add_clnt"
+        android:layout_width="249dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IMG_Plat_Add_clnt" />
+
+    <EditText
+        android:id="@+id/txt_Coments_Add_Plat_clnt"
+        android:layout_width="205dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Comentarios."
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Descripcion_Plat_Add_clnt" />
+
+    <EditText
+        android:id="@+id/txt_cant_plat_add_clnt"
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Coments_Add_Plat_clnt" />
+
+    <Button
+        android:id="@+id/btn_MAS"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:onClick="Mas"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/txt_cant_plat_add_clnt"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Coments_Add_Plat_clnt" />
+
+    <Button
+        android:id="@+id/btn_MENOS"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:onClick="Menos"
+        android:text="-"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_cant_plat_add_clnt"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Coments_Add_Plat_clnt" />
+
+    <Button
+        android:id="@+id/btn_ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="Agregar_btn"
+        android:text="Agregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Precio_Plat_ADD_clnt" />
+
+    <TextView
+        android:id="@+id/Precio_Plat_ADD_clnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="$###.###"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cant_plat_add_clnt" />
+
+    <TextView
+        android:id="@+id/ADD_Identificador_Platillo_clnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='"ID"'
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo_Plat_Add_clnt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9D9D"
+    tools:context=".Select_Mesa">
+
+    <ImageView
+        android:id="@+id/img_Mesa3"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:alpha=".4"
+        android:contentDescription="@string/Imagenes"
+        app:layout_constraintEnd_toStartOf="@+id/img_Mesa4"
+        app:layout_constraintTop_toBottomOf="@+id/img_Mesa1"
+        app:srcCompat="@mipmap/mesa3" />
+
+    <ImageView
+        android:id="@+id/img_Mesa4"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:alpha="0.4"
+        android:contentDescription="@string/Imagenes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Mesa2"
+        app:srcCompat="@mipmap/mesa4" />
+
+    <Button
+        android:id="@+id/btn_Mesa4"
+        android:layout_width="140dp"
+        android:layout_height="145dp"
+        android:alpha="0"
+        android:onClick="Mesa4"
+        app:layout_constraintBottom_toBottomOf="@+id/img_Mesa4"
+        app:layout_constraintEnd_toEndOf="@+id/img_Mesa4"
+        app:layout_constraintStart_toStartOf="@+id/img_Mesa4"
+        app:layout_constraintTop_toTopOf="@+id/img_Mesa4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="414dp"
+        android:layout_height="110dp"
+        android:contentDescription="@string/Imagenes"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/cuadro" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Imagenes"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="414dp"
+        android:layout_height="105dp"
+        android:contentDescription="@string/Imagenes"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/cuadro" />
+
+    <ImageView
+        android:id="@+id/img_Mesa1"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:alpha="0.4"
+        android:contentDescription="@string/Cuadros_de_texto"
+        app:layout_constraintEnd_toStartOf="@+id/img_Mesa2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@mipmap/mesa1" />
+
+    <ImageView
+        android:id="@+id/img_Mesa2"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:alpha="0.4"
+        android:contentDescription="@string/Imagenes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@mipmap/mesa2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginRight="103dp"
+        android:text="Seleccione Una Mesa disponible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/btn_Mesa1"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:alpha="0"
+        android:onClick="Mesa1"
+        app:layout_constraintBottom_toBottomOf="@+id/img_Mesa1"
+        app:layout_constraintEnd_toEndOf="@+id/img_Mesa1"
+        app:layout_constraintStart_toStartOf="@+id/img_Mesa1"
+        app:layout_constraintTop_toTopOf="@+id/img_Mesa1" />
+
+    <Button
+        android:id="@+id/btn_Mesa2"
+        android:layout_width="140dp"
+        android:layout_height="145dp"
+        android:alpha="0"
+        android:onClick="Mesa2"
+        app:layout_constraintBottom_toBottomOf="@+id/img_Mesa2"
+        app:layout_constraintEnd_toEndOf="@+id/img_Mesa2"
+        app:layout_constraintStart_toStartOf="@+id/img_Mesa2"
+        app:layout_constraintTop_toTopOf="@+id/img_Mesa2" />
+
+    <Button
+        android:id="@+id/btn_Mesa3"
+        android:layout_width="140dp"
+        android:layout_height="145dp"
+        android:alpha="0"
+        android:onClick="Mesa3"
+        app:layout_constraintBottom_toBottomOf="@+id/img_Mesa3"
+        app:layout_constraintEnd_toEndOf="@+id/img_Mesa3"
+        app:layout_constraintStart_toStartOf="@+id/img_Mesa3"
+        app:layout_constraintTop_toTopOf="@+id/img_Mesa3" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="82dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/lock2png" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="78dp"
+        android:layout_height="66dp"
+        android:alpha="0"
+        android:onClick="Bloc"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
